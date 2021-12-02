@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button-container{
+    text-align: center;
+    padding: 2rem;
+}
+
+.btn-start{
+    display: inline-block;
+    background-color: seagreen; 
+    border-radius: 5px;
+    padding: 2rem;
+    font-size: 2rem;
+    color: rgb(146, 9, 9);
+}
+
+.container{
+    height: 1100px;
+    width: 1000px;
+    border: 1px solid #333;
+    margin: 1rem auto;
+    background-image: url('../images/img1.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 2fr);
+    grid-template-areas: 
+    "month1 month2 month3"
+    "month4 month5 month6"
+    "month7 month8 month9"
+    "month10 month11 month12"
+    "month13 month14 month15"
+    "month16 month17 month18"
+    "month19 month20 month21"
+    "month22 month23 month24";
+}
+
+.image{
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.text{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #777;
+    transition: opacity 3s;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.timer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 15rem;
+}
+.timer h1 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 5rem;
+}
+
+.timer-container{
+    position: relative;
+    margin-bottom: 20rem;
+    padding-bottom: 25rem;
+}
+
+.countdown{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.countdown div{
+    padding: 0.6rem;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    margin: 0.3rem;
+    background-color: rgb(158, 18, 18);
+}
